@@ -240,9 +240,11 @@ _=/usr/bin/printenv
 bash: curl: command not found
 
 # java -version
-openjdk 11.0.4 2022-07-19
-OpenJDK Runtime Environment Temurin-11.0.4+8 (build 11.0.4+8)
-OpenJDK 64-Bit Server VM Temurin-11.0.4+8 (build 11.0.4+8, mixed mode, sharing)
+openjdk version "11.0.16" 2022-07-19
+OpenJDK Runtime Environment Temurin-11.0.16+8 (build 11.0.16+8)
+OpenJDK 64-Bit Server VM Temurin-11.0.16+8 (build 11.0.16+8, mixed mode)
+
+
 root@40d34d5c68df:/home/gradle#
 
 # git version
@@ -274,7 +276,7 @@ Revision:     c7db7b958189ad2b0c1472b6fe663e6d654a5103
 Kotlin:       1.6.21
 Groovy:       3.0.10
 Ant:          Apache Ant(TM) version 1.10.11 compiled on July 10 2021
-JVM:          11.0.4 (Eclipse Adoptium 11.0.4+8)
+JVM:          11.0.16 (Eclipse Adoptium 11.0.16+8)
 OS:           Linux 5.10.25-linuxkit amd64
 
 
