@@ -1,9 +1,9 @@
 # Debian-based Mandrel image optimized for building Quarkus projects
 
-last updated: last updated: Thu Oct  6 18:00:06 CEST 2022   
+last updated: last updated: Thu Oct  6 18:33:55 CEST 2022   
 author: Lukasz Ochmanski (github@ochmanski.de)  
   
-[![Github tag](https://badgen.net/github/tag/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-gradle-7-5-java-11?icon=github&kill_cache=1)](https://github.com/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-gradle-7-5-java-11/tags/0.1.1)  
+[![Github tag](https://badgen.net/github/tag/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-gradle-7-5-java-11?icon=github&kill_cache=1)](https://github.com/ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-gradle-7-5-java-11/tags/1.0.0)  
 &nbsp;
   
 **Project details:**  
@@ -101,13 +101,13 @@ https://hub.docker.com/repository/docker/ochmanskide/base.images.debian.11-bulls
 
 ## 5. Image coordinates:
 ```  
-docker pull ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-gradle-7-5-java-11:0.1.1
+docker pull ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-gradle-7-5-java-11:1.0.0
 ```
 
 ## 6. Docker images:
 ```
 REPOSITORY                                                                                        TAG                    SIZE
-ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-gradle-7-5-java-11   0.1.1                  1.18GB
+ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-gradle-7-5-java-11   1.0.0                  1.18GB
 ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-gradle-7-5-java-11   latest                 1.18GB
 debian                                                                                            stable-20220711-slim   80.4MB
 ```
@@ -194,7 +194,7 @@ apt install g++ zlib1g-dev libfreetype6-dev
 
 ## 9. image details:
 ```bash
-$ docker run -it --entrypoint /bin/bash ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-gradle-7-5-java-11:0.1.1
+$ docker run -it --entrypoint /bin/bash ochmanskide/base.images.debian.11-bullseye.mandrel.22-2.java.11.mandrel-22-2-gradle-7-5-java-11:1.0.0
 
 # echo $0
 /bin/bash
@@ -240,9 +240,11 @@ _=/usr/bin/printenv
 bash: curl: command not found
 
 # java -version
-openjdk 11.0.4 2022-07-19
-OpenJDK Runtime Environment Temurin-11.0.4+8 (build 11.0.4+8)
-OpenJDK 64-Bit Server VM Temurin-11.0.4+8 (build 11.0.4+8, mixed mode, sharing)
+openjdk version "11.0.16" 2022-07-19
+OpenJDK Runtime Environment Temurin-11.0.16+8 (build 11.0.16+8)
+OpenJDK 64-Bit Server VM Temurin-11.0.16+8 (build 11.0.16+8, mixed mode)
+
+
 root@40d34d5c68df:/home/gradle#
 
 # git version
@@ -274,7 +276,7 @@ Revision:     c7db7b958189ad2b0c1472b6fe663e6d654a5103
 Kotlin:       1.6.21
 Groovy:       3.0.10
 Ant:          Apache Ant(TM) version 1.10.11 compiled on July 10 2021
-JVM:          11.0.4 (Eclipse Adoptium 11.0.4+8)
+JVM:          11.0.16 (Eclipse Adoptium 11.0.16+8)
 OS:           Linux 5.10.25-linuxkit amd64
 
 
