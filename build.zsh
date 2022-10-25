@@ -32,3 +32,32 @@ fi
 
 echo "docker build -t $DOCKER_HUB_HOST/$DOCKER_REPOSITORY$GROUP_ID/$ARTIFACT_ID:$IMAGE_TAG ."
 echo "docker push $DOCKER_HUB_HOST/$DOCKER_REPOSITORY$GROUP_ID/$ARTIFACT_ID:$IMAGE_TAG"
+
+docker tag $DOCKER_HUB_HOST/$DOCKER_REPOSITORY$GROUP_ID/$ARTIFACT_ID:$IMAGE_TAG $DOCKER_HUB_HOST/$DOCKER_REPOSITORY$GROUP_ID/$ARTIFACT_ID:latest
+docker tag $DOCKER_HUB_HOST/$DOCKER_REPOSITORY$GROUP_ID/$ARTIFACT_ID:$IMAGE_TAG $DOCKER_HUB_HOST/graalvm-gradle:mandrel-22-2-gradle-7-5-java-11
+docker tag $DOCKER_HUB_HOST/$DOCKER_REPOSITORY$GROUP_ID/$ARTIFACT_ID:$IMAGE_TAG $DOCKER_HUB_HOST/graalvm-gradle:22-2-gradle-7-5-java-11
+docker tag $DOCKER_HUB_HOST/$DOCKER_REPOSITORY$GROUP_ID/$ARTIFACT_ID:$IMAGE_TAG $DOCKER_HUB_HOST/graalvm-gradle:java-11
+docker tag $DOCKER_HUB_HOST/$DOCKER_REPOSITORY$GROUP_ID/$ARTIFACT_ID:$IMAGE_TAG $DOCKER_HUB_HOST/graalvm-gradle:java11
+docker tag $DOCKER_HUB_HOST/$DOCKER_REPOSITORY$GROUP_ID/$ARTIFACT_ID:$IMAGE_TAG $DOCKER_HUB_HOST/graalvm-gradle:jdk-11
+docker tag $DOCKER_HUB_HOST/$DOCKER_REPOSITORY$GROUP_ID/$ARTIFACT_ID:$IMAGE_TAG $DOCKER_HUB_HOST/graalvm-gradle:jdk11
+docker tag $DOCKER_HUB_HOST/$DOCKER_REPOSITORY$GROUP_ID/$ARTIFACT_ID:$IMAGE_TAG $DOCKER_HUB_HOST/mandrel-gradle:mandrel-22-2-gradle-7-5-java-11
+docker tag $DOCKER_HUB_HOST/$DOCKER_REPOSITORY$GROUP_ID/$ARTIFACT_ID:$IMAGE_TAG $DOCKER_HUB_HOST/mandrel-gradle:22-2-gradle-7-5-java-11
+docker tag $DOCKER_HUB_HOST/$DOCKER_REPOSITORY$GROUP_ID/$ARTIFACT_ID:$IMAGE_TAG $DOCKER_HUB_HOST/mandrel-gradle:java-11
+docker tag $DOCKER_HUB_HOST/$DOCKER_REPOSITORY$GROUP_ID/$ARTIFACT_ID:$IMAGE_TAG $DOCKER_HUB_HOST/mandrel-gradle:java11
+docker tag $DOCKER_HUB_HOST/$DOCKER_REPOSITORY$GROUP_ID/$ARTIFACT_ID:$IMAGE_TAG $DOCKER_HUB_HOST/mandrel-gradle:jdk-11
+docker tag $DOCKER_HUB_HOST/$DOCKER_REPOSITORY$GROUP_ID/$ARTIFACT_ID:$IMAGE_TAG $DOCKER_HUB_HOST/mandrel-gradle:jdk11
+
+docker push $DOCKER_HUB_HOST/$DOCKER_REPOSITORY$GROUP_ID/$ARTIFACT_ID:$IMAGE_TAG
+docker push $DOCKER_HUB_HOST/$DOCKER_REPOSITORY$GROUP_ID/$ARTIFACT_ID:latest
+docker push $DOCKER_HUB_HOST/graalvm-gradle:mandrel-22-2-gradle-7-5-java-11
+docker push $DOCKER_HUB_HOST/graalvm-gradle:22-2-gradle-7-5-java-11
+docker push $DOCKER_HUB_HOST/graalvm-gradle:java-11
+docker push $DOCKER_HUB_HOST/graalvm-gradle:java11
+docker push $DOCKER_HUB_HOST/graalvm-gradle:jdk-11
+docker push $DOCKER_HUB_HOST/graalvm-gradle:jdk11
+docker push $DOCKER_HUB_HOST/mandrel-gradle:mandrel-22-2-gradle-7-5-java-11
+docker push $DOCKER_HUB_HOST/mandrel-gradle:22-2-gradle-7-5-java-11
+docker push $DOCKER_HUB_HOST/mandrel-gradle:java-11
+docker push $DOCKER_HUB_HOST/mandrel-gradle:java11
+docker push $DOCKER_HUB_HOST/mandrel-gradle:jdk-11
+docker push $DOCKER_HUB_HOST/mandrel-gradle:jdk11
