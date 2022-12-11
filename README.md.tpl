@@ -304,10 +304,16 @@ java -version && echo
 gradle -version && echo
 docker --version && echo
 aws --version && echo
-alias la='ls -la' && echo
-la /usr/local/bin/containerd && echo
+
+# manually start Docker daemon (which is also a default entrypoint)
 /usr/local/bin/dockerd-entrypoint.sh 2> /dev/null && echo
+
+# optional - authenticate to AWS Elastic Container Registry
+# (if you had installed AWS CLI tool, from the script that I provided)
+# more details available in FAQ Section 15.3.
 /home/aws/ecr/login.sh && echo
+
+# verify that Docker was connected, and list all images
 docker images && echo
 ```
 
